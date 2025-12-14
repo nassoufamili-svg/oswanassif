@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+    line-height: 1.6;
+}
+
+/* HEADER FIXE */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #004d40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* LOGO À GAUCHE */
+header .logo {
+    width: 80px;
+    position: absolute;
+    left: 30px;
+}
+.media{
+    display: block;       /* Transforme la vidéo en bloc */
+    margin: 0 auto;       /* Centre horizontalement */
+    width: 500px;         /* Largeur moyenne, tu peux ajuster */
+    height: auto;         /* Garde les proportions */
+}
+/* TITRE */
+header h1 {
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* NAV FIXE SOUS LE HEADER */
+nav {
+    position: fixed;
+    top: 120px; /* hauteur du header */
+    left: 0;
+    width: 100%;
+    background-color: #070064;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* CONTENU PRINCIPAL */
+main {
+    padding-top: 180px; /* espace pour header + nav fixes */
+}
+
+/* PREMIÈRE SECTION visible dès le départ */
+section:first-of-type {
+    margin-top: 180px; /* pour ne pas être cachée par le header/nav */
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #e6f0ff;
+    border-radius: 10px;
+    border-bottom: 1px solid #ccc;
+    scroll-margin-top: 180px;
+}
+
+/* PIED DE PAGE */
+footer {
+    text-align: center;
+    background-color: #070064;
+    color: white;
+    padding: 15px;
+}
+
+/* Style des liens non visités */
+a:link {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Style quand la souris survole le lien */
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Style quand on clique sur le lien */
+a:active {
+    color: orange;
+    text-decoration: underline;
+}
+/* Style général du tableau */
+table {
+    width: 80%;               /* Largeur du tableau */
+    margin: 20px auto;        /* Centrer le tableau avec marge */
+    border-collapse: collapse; /* Fusionner les bordures */
+    font-family: Arial, sans-serif; /* Police agréable */
+    background-color: #f9f9f9;  /* Couleur de fond */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+/* Style des cellules */
+th, td {
+    border: 1px solid #ccc;   /* Bordure grise */
+    padding: 10px 15px;       /* Espacement intérieur */
+    text-align: left;         /* Alignement du texte */
+}
+
+/* Style des en-têtes */
+th {
+    background-color: #1e90ff; 
+    color: white;              /* Texte blanc */
+    font-weight: bold;
+}
+
+/* Ligne alternée pour lisibilité */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Effet survol */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style pour les liens */
+td a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
